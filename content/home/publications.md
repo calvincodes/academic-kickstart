@@ -1,71 +1,43 @@
 +++
-# A Recent Publications section created with the Pages widget.
-# This section displays recent blog posts from `content/publication/`.
+# Recent Publications widget.
+# This widget displays recent publications from `content/publication/`.
+widget = "publications"
+active = true
+date = 2016-04-20T00:00:00
 
-widget = "pages"  # See https://sourcethemes.com/academic/docs/page-builder/
-headless = true  # This file represents a page section.
-active = true  # Activate this widget? true/false
-weight = 90  # Order that this section will appear.
-
-title = "Recent Publications"
+title = "Awards & Publications"
 subtitle = ""
 
-[content]
-  # Page type to display. E.g. post, talk, or publication.
-  page_type = "publication"
-  
-  # Choose how much pages you would like to display (0 = all pages)
-  count = 5
-  
-  # Choose how many pages you would like to offset by
-  offset = 0
+# Order that this section will appear in.
+weight = 4
 
-  # Page order. Descending (desc) or ascending (asc) date.
-  order = "desc"
+# Number of publications to list.
+count = 10
 
-  # Filter posts by a taxonomy term.
-  [content.filters]
-    tag = ""
-    category = ""
-    publication_type = ""
-    exclude_featured = false
-  
-[design]
-  # Toggle between the various page layout types.
-  #   1 = List
-  #   2 = Compact
-  #   3 = Card
-  #   4 = Citation (publication only)
-  view = 2
-  
-[design.background]
-  # Apply a background color, gradient, or image.
-  #   Uncomment (by removing `#`) an option to apply it.
-  #   Choose a light or dark text color by setting `text_color_light`.
-  #   Any HTML color name or Hex value is valid.
-    
-  # Background color.
-  # color = "navy"
-  
-  # Background gradient.
-  # gradient_start = "DeepSkyBlue"
-  # gradient_end = "SkyBlue"
-  
-  # Background image.
-  # image = "background.jpg"  # Name of image in `static/img/`.
-  # image_darken = 0.6  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
+# List format.
+#   0 = Simple
+#   1 = Detailed
+#   2 = APA
+#   3 = MLA
+#   4 = Stream
+list_format = 4
 
-  # Text color (true=light or false=dark).
-  # text_color_light = true  
-  
-[advanced]
- # Custom CSS. 
- css_style = ""
- 
- # CSS class.
- css_class = ""
+# Filter by publication type.
+# -1: Any
+#  0: Uncategorized
+#  1: Conference proceedings
+#  2: Journal
+#  3: Work in progress
+#  4: Technical report
+#  5: Book
+#  6: Book chapter
+publication_type = "-1"
+
+# Exclude publications that are shown in the Selected Publications widget?
+exclude_selected = false
 +++
 
-{{% alert note %}}
-Quickly discover relevant content by [filtering publications]({{< ref "/publication/_index.md" >}}).
-{{% /alert %}}
+1. [*Spoken term detection from continuous speech using ANN posteriors and image processing techniques.*](https://ieeexplore.ieee.org/abstract/document/7561151/) Shankar, Ravi; **Jain, Arpit**; K T, Deepak; C M, Vikram; Prasanna, S R M; 2016 Twenty Second National Conference on Communication (NCC), Guwahati, India
+2. [*A Robust Reliable and Low Complexity on chip f-QRS Detection and Identification Architecture for Remote Personalized Health Care Applications.*](http://www.ingentaconnect.com/content/asp/jolpe/2015/00000011/00000003/art00015)Vemishetty, Naresh; **Jain, Arpit**; Amber, Aashish; Maheshwari, Sidharth; Jagirdar, Agathya; Acharyya, Amit; Journal of Low Power Electronics 11, 387-400 (2015)
+3. (**Best Video Demo Award**) [*MedAssist : Prescription Reminder for the elderly.*](http://ieeexplore.ieee.org/document/7899217/) Gupta, Kshitiz; **Jain, Arpit**; Harsha Vardhan, P.; Singh, Sumeet; Amber, Aashish; Sethi, Amit; 2014 Texas Instruments India Educators' Conference (TIIEC), Bengaluru, India
+4. (**Best Paper Award**) [*A Low Complexity Architecture for Online on-chip Detection and Identification of f-QRS feature for Remote Personalized Health Care Applications*](http://ieeexplore.ieee.org/document/7172759/) Vemishetty, Naresh; **Jain, Arpit**; Amber, Aashish; Acharyya, Amit; 2014 Fifth International Symposium on Electronic System Design, Surathkal, India
